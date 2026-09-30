@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f1f8;
+    color: #25202a;
+    line-height: 1.6;
+    padding-bottom: 80px;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+    color: white;
+    padding: 22px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.logo {
+    font-size: 38px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* MENÚ */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+nav button {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    padding: 6px 15px;
+    cursor: pointer;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 92%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.seccion {
+    display: none;
+}
+
+.seccion.activa {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #6a1b9a;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+/* TARJETAS */
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.principal {
+    background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+    color: white;
+}
+
+.principal h2 {
+    color: white;
+}
+
+.alerta {
+    border-left: 5px solid #e53935;
+}
+
+.ejemplo {
+    background: #f1e5f7;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+/* BOTONES */
+
+.boton {
+    border: none;
+    background: #7b2cbf;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+.emergencia {
+    background: #d32f2f;
+}
+
+/* TIPOS DE VIOLENCIA */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.tipo {
+    background: white;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+
+.tipo span {
+    font-size: 28px;
+}
+
+.tipo h3 {
+    color: #6a1b9a;
+    margin-top: 5px;
+}
+
+.tipo p {
+    font-size: 14px;
+}
+
+/* CUESTIONARIO */
+
+.pregunta {
+    margin: 22px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pregunta p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pregunta label {
+    display: block;
+    background: #f7f3f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 6px 0;
+}
+
+.pregunta input {
+    margin-right: 8px;
+}
+
+.resultado {
+    display: none;
+    margin-top: 18px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f1e5f7;
+}
+
+/* PIE */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* MÓVIL */
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+}

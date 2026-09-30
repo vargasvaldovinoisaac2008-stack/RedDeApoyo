@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7b2cbf">
+    <title>Red de Apoyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🫶</div>
+    <div>
+        <h1>Red de Apoyo</h1>
+        <p>Información y orientación</p>
+    </div>
+</header>
+
+<nav>
+    <button onclick="mostrarSeccion('inicio')">🏠</button>
+    <button onclick="mostrarSeccion('aprende')">📚</button>
+    <button onclick="mostrarSeccion('test')">📝</button>
+    <button onclick="mostrarSeccion('ayuda')">🆘</button>
+</nav>
+
+<main>
+
+    <!-- INICIO -->
+    <section id="inicio" class="seccion activa">
+        <div class="card principal">
+            <h2>Bienvenido/a</h2>
+            <p>
+                Esta aplicación ofrece información para reconocer
+                estereotipos, prejuicios, roles de género y diferentes
+                formas de violencia.
+            </p>
+
+            <button class="boton" onclick="mostrarSeccion('aprende')">
+                Comenzar
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>💡 Recuerda</h3>
+            <p>
+                Nadie merece recibir violencia, discriminación o
+                malos tratos. Buscar apoyo puede ser un primer paso.
+            </p>
+        </div>
+
+        <div class="card alerta">
+            <h3>🆘 ¿Necesitas ayuda?</h3>
+            <p>
+                Si estás en una situación de peligro inmediato,
+                busca ayuda de una persona de confianza o de los
+                servicios de emergencia.
+            </p>
+
+            <button class="boton emergencia"
+                    onclick="llamarEmergencia()">
+                Llamar al 911
+            </button>
+        </div>
+    </section>
+
+
+    <!-- APRENDE -->
+    <section id="aprende" class="seccion">
+
+        <h2>📚 Aprende</h2>
+
+        <div class="card">
+            <h3>Estereotipos de género</h3>
+            <p>
+                Son ideas generalizadas sobre cómo deberían ser,
+                comportarse o actuar las personas debido a su género.
+            </p>
+
+            <div class="ejemplo">
+                Ejemplo: "Los hombres no deben llorar".
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Prejuicios</h3>
+            <p>
+                Son opiniones o juicios previos sobre una persona o
+                grupo, muchas veces basados en ideas sin suficiente
+                información.
+            </p>
+
+            <div class="ejemplo">
+                Ejemplo: pensar que una mujer no puede realizar
+                determinadas actividades por ser mujer.
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Roles de género</h3>
+            <p>
+                Son expectativas sociales sobre las actividades,
+                responsabilidades o comportamientos que deberían
+                realizar hombres y mujeres.
+            </p>
+
+            <div class="ejemplo">
+                Ejemplo: creer que las tareas del hogar corresponden
+                solamente a las mujeres.
+            </div>
+        </div>
+
+        <h2>⚠️ Tipos de violencia</h2>
+
+        <div class="grid">
+
+            <div class="tipo">
+                <span>🗣️</span>
+                <h3>Verbal</h3>
+                <p>Insultos, amenazas o humillaciones.</p>
+            </div>
+
+            <div class="tipo">
+                <span>🧠</span>
+                <h3>Psicológica</h3>
+                <p>Control, intimidación o manipulación.</p>
+            </div>
+
+            <div class="tipo">
+                <span>👊</span>
+                <h3>Física</h3>
+                <p>Agresiones que causan daño físico.</p>
+            </div>
+
+            <div class="tipo">
+                <span>📱</span>
+                <h3>Digital</h3>
+                <p>Acoso, amenazas o difusión de contenido sin permiso.</p>
+            </div>
+
+            <div class="tipo">
+                <span>💰</span>
+                <h3>Económica</h3>
+                <p>Control o limitación injusta de recursos económicos.</p>
+            </div>
+
+            <div class="tipo">
+                <span>🚫</span>
+                <h3>Sexual</h3>
+                <p>Conductas sexuales sin consentimiento.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TEST -->
+    <section id="test" class="seccion">
+
+        <h2>📝 Cuestionario educativo</h2>
+
+        <div class="card">
+            <p>
+                Este cuestionario es únicamente informativo y no
+                sustituye la orientación de un profesional.
+            </p>
+
+            <div class="pregunta">
+                <p>1. ¿Tu pareja intenta controlar con quién hablas?</p>
+
+                <label>
+                    <input type="radio" name="p1" value="si">
+                    Sí
+                </label>
+
+                <label>
+                    <input type="radio" name="p1" value="no">
+                    No
+                </label>
+            </div>
+
+            <div class="pregunta">
+                <p>2. ¿Alguien te ha insultado o humillado constantemente?</p>
+
+                <label>
+                    <input type="radio" name="p2" value="si">
+                    Sí
+                </label>
+
+                <label>
+                    <input type="radio" name="p2" value="no">
+                    No
+                </label>
+            </div>
+
+            <div class="pregunta">
+                <p>3. ¿Han compartido información o imágenes tuyas sin permiso?</p>
+
+                <label>
+                    <input type="radio" name="p3" value="si">
+                    Sí
+                </label>
+
+                <label>
+                    <input type="radio" name="p3" value="no">
+                    No
+                </label>
+            </div>
+
+            <div class="pregunta">
+                <p>4. ¿Alguien te ha amenazado para hacer algo que no quieres?</p>
+
+                <label>
+                    <input type="radio" name="p4" value="si">
+                    Sí
+                </label>
+
+                <label>
+                    <input type="radio" name="p4" value="no">
+                    No
+                </label>
+            </div>
+
+            <button class="boton" onclick="evaluarTest()">
+                Ver resultado
+            </button>
+
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </section>
+
+
+    <!-- AYUDA -->
+    <section id="ayuda" class="seccion">
+
+        <h2>🆘 Rutas de apoyo</h2>
+
+        <div class="card">
+            <h3>🚨 Emergencia</h3>
+
+            <p>
+                Si existe un peligro inmediato en México:
+            </p>
+
+            <button class="boton emergencia"
+                    onclick="llamarEmergencia()">
+                📞 Llamar al 911
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>📍 Buscar ayuda cercana</h3>
+
+            <p>
+                Puedes buscar centros de atención y servicios de apoyo
+                cercanos a tu ubicación.
+            </p>
+
+            <button class="boton"
+                    onclick="buscarCentros()">
+                Ver centros cercanos
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>👥 Personas de confianza</h3>
+
+            <p>
+                También puedes acercarte a un familiar, profesor,
+                orientador escolar u otra persona adulta de confianza.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Seguridad digital</h3>
+
+            <p>
+                Si existe violencia digital, evita compartir más
+                información personal y conserva evidencias si hacerlo
+                es seguro para ti.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Red de Apoyo · Proyecto educativo</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
