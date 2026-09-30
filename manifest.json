@@ -1,0 +1,11 @@
+{
+  "name": "Red de Apoyo",
+  "short_name": "Red de Apoyo",
+  "description": "Información y orientación sobre violencia de género, estereotipos, prejuicios y roles de género.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f1f8",
+  "theme_color": "#7b2cbf",
+  "orientation": "portrait",
+  "lang": "es-MX"
+}
